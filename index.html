@@ -43,45 +43,48 @@
         <label for="personal-account">
           <input
             class="inline"
-            name="personal-account"
+            name="account-type"
             id="personal-account"
             type="radio"
             name="account-type"
           />
           Personal Account
-          <span id="personal-account-error"></span>
         </label>
+        <div id="personal-account-error"></div>
+
         <label for="business-account">
           <input
             class="inline"
-            name="business-account"
+            name="account-type"
             id="business-account"
             type="radio"
             name="account-type"
           />
           Business Account
-          <span id="business-account-error"></span>
         </label>
+        <div id="business-account-error"></div>
         <label for="terms-and-conditions">
           <input
             class="inline"
-            name="terms-and-conditions"
+            name="terms"
             id="terms-and-conditions"
             type="checkbox"
           />
           I accept the <a href="">terms and conditions</a>
-          <span id="terms-and-conditions-error"></span>
+          <div id="terms-and-conditions-error"></div>
         </label>
       </fieldset>
 
       <fieldset>
         <label for="profile-picture">
           Upload a profile picture:
-          <input id="profile-picture" type="file" />
+          <input id="profile-picture" type="file" accept="image/*" />
+          <span id="profile-picture-error"></span>
         </label>
         <label for="age">
           Input Your Age (years):
           <input name="age" id="age" type="number" />
+          <span id="age-error"></span>
         </label>
         <label for="referral">
           How did you hear about us:
@@ -92,6 +95,7 @@
             <option value="3">twitter</option>
             <option value="4">other</option>
           </select>
+          <span id="referral-option"></span>
         </label>
         <label for="bio">
           Provide a bio:
@@ -102,6 +106,7 @@
             placeholder="Let others know what makes you awesome!..."
             name="bio"
           ></textarea>
+          <span id="bio-error"></span>
         </label>
       </fieldset>
 
